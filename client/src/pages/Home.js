@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import FilterList from "../components/FilterList";
 import DataTableComponent from "../components/DataTableComponents";
 import Map from "../components/Map";
-import axios from "axios";
-import { dummyData } from "../utils/dummyData";
+import { getAll } from "../utils/api";
 
 const Home = () => {
   const [filters, setFilters] = useState({
@@ -12,16 +11,23 @@ const Home = () => {
     tipe: "",
     harga: "",
   });
-  // const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
-  // useEffect(() => {
-  //   // Fetch data dari API atau dummy data
-  //   axios.get("/api/houses").then((response) => {
-  //     setData(response.data);
-  //   });
-  // }, []);
+  useEffect(() => {
+    // Ambil data dari server
+    const fetchData = async () => {
+      try {
+        const response = await getAll();
+        setData(response.data);
+      } catch (error) {
+        console.error("Error fetching:", error);
+      }
+    };
 
-  const filteredData = dummyData.filter((item) => {
+    fetchData();
+  }, []);
+
+  const filteredData = data.filter((item) => {
     return (
       (!filters.nama_perumahan ||
         item.nama_perumahan

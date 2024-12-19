@@ -1,10 +1,4 @@
 import { Link } from "react-router-dom";
-export const NAMA_PERUMAHAN = [
-  "Perumahan A",
-  "Perumahan B",
-  "Perumahan C",
-  "Perumahan D",
-];
 
 export const KECAMATAN = [
   "Pekanbaru Kota",
@@ -53,7 +47,7 @@ export const columnsTabel = [
   {
     name: "Detail",
     cell: (row) => (
-      <Link to={`/detail/${row.id}`}>
+      <Link to={`/detail/${row._id}`}>
         <button className="btn">Detail</button>
       </Link>
     ),

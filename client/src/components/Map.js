@@ -2,8 +2,6 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet"; // Leaflet is required for certain customizations
 import { Link } from "react-router-dom";
 
-// Set up a default center for the map
-const center = [51.505, -0.09]; // Example: Latitude and Longitude of London
 const zoomLevel = 13;
 
 const Map = ({ locations }) => {
@@ -15,11 +13,7 @@ const Map = ({ locations }) => {
     popupAnchor: [1, -34],
   });
   return (
-    <MapContainer
-      center={center}
-      zoom={zoomLevel}
-      className="mt-10 h-screen"
-    >
+    <MapContainer center={center} zoom={zoomLevel} className="mt-10 h-screen">
       {/* TileLayer to render map tiles */}
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
