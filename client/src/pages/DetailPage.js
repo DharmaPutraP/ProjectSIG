@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getById } from "../utils/api";
+import Map from "../components/Map";
 
 const DetailPage = () => {
   const { id } = useParams(); // Ambil parameter ID dari URL
@@ -25,26 +26,84 @@ const DetailPage = () => {
   if (loading) {
     return <div>Loading...</div>;
   }
+  const RupiahFormatter = (amount) => {
+    return new Intl.NumberFormat("id-ID", {
+      style: "currency",
+      currency: "IDR",
+    }).format(amount);
+  };
 
   return (
     <div>
-      <h1>{perumahan.nama_perumahan}</h1>
-      <p>
-        <b>Alamat:</b> {perumahan.alamat}
-      </p>
-      <p>
-        <b>Tipe:</b> {perumahan.tipe}
-      </p>
-      <p>
-        <b>Luas Tanah:</b> {perumahan.luas_tanah}
-      </p>
-      <p>
-        <b>Kecamatan:</b> {perumahan.kecamatan}
-      </p>
-      <p>
-        <b>No. Telp:</b> {perumahan.nomor_hp}
-      </p>
-      <img src={perumahan.gambar} alt={perumahan.nama_perumahan} width={300} />
+      <Map
+        style="h-[20rem]"
+        locations={{
+          id: perumahan._id,
+          latitude: perumahan.x,
+          longitude: perumahan.y,
+          name: perumahan.nama_perumahan,
+          address: perumahan.alamat,
+          kecamatan: perumahan.kecamatan,
+        }}
+      />
+      <div className="pt-10 flex flex-col sm:flex-row justify-between items-center w-full">
+        <img
+          src={`/${perumahan.kecamatan}/${perumahan.nama_perumahan}.jpg`}
+          alt={perumahan.nama_perumahan}
+          width={350}
+        />
+        <div>
+          <table className="text-left text-sm mt-5 sm:mt-0">
+            <tr>
+              <td className="w-2/5 sm:w-1/5 font-bold">Nama Perumahan</td>
+              <td>:</td>
+              <td className="ps-5 w-full">{perumahan.nama_perumahan}</td>
+            </tr>
+            <tr className="h-[2rem]">
+              <td className="font-bold">Alamat</td>
+              <td>:</td>
+              <td className="ps-5">{perumahan.alamat}</td>
+            </tr>
+            <tr className="h-[2rem]">
+              <td className="font-bold">Tipe</td>
+              <td>:</td>
+              <td className="ps-5">{perumahan.tipe}</td>
+            </tr>
+            <tr className="h-[2rem]">
+              <td className="font-bold">Luas Tanah</td>
+              <td>:</td>
+              <td className="ps-5">{perumahan.luas_tanah}</td>
+            </tr>
+            <tr className="h-[2rem]">
+              <td className="font-bold">Harga</td>
+              <td>:</td>
+              <td className="ps-5">{RupiahFormatter(perumahan.harga)}</td>
+            </tr>
+            <tr className="h-[2rem]">
+              <td className="font-bold">Tersedia</td>
+              <td>:</td>
+              <td className="ps-5">{perumahan.isAvailable}</td>
+            </tr>
+            <tr className="h-[2rem]">
+              <td className="font-bold">Nomor Hp</td>
+              <td>:</td>
+              <td className="ps-5">
+                <a
+                  href={`https://api.whatsapp.com/send/?phone=${perumahan.nomor_hp}`}
+                  className="text-green-500 flex"
+                >
+                  <img
+                    src={`${process.env.REACT_APP_MARKERICON_URI}/whatsappIcon.png`}
+                    width={18}
+                    className="me-1"
+                  />
+                  {perumahan.nomor_hp}
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
   );
 };

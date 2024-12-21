@@ -1,8 +1,33 @@
 import FormInput from "./FormInput";
 import FormSelect from "./FormSelect";
 import { KECAMATAN, TIPE_RUMAH } from "../utils/constants";
+import { useEffect, useState } from "react";
+import { getUniqueValues } from "../utils/api";
 
 const FilterList = ({ filters, setFilters }) => {
+  const [uniqueValues, setUniqueValues] = useState({
+    kecamatan: [],
+    tipe: [],
+  });
+  useEffect(() => {
+    // Panggil API untuk mendapatkan nilai unik
+    const fetchUniqueValues = async () => {
+      try {
+        const kecamatanResponse = await getUniqueValues("kecamatan");
+        const tipeResponse = await getUniqueValues("tipe");
+
+        setUniqueValues({
+          kecamatan: kecamatanResponse.data,
+          tipe: tipeResponse.data,
+        });
+      } catch (error) {
+        console.error("Error fetching unique values:", error);
+      }
+    };
+
+    fetchUniqueValues();
+  }, []);
+
   const handleChange = (e) => {
     setFilters({
       ...filters,
@@ -19,7 +44,7 @@ const FilterList = ({ filters, setFilters }) => {
             type="text"
             labelText="Nama Perumahan"
             name="nama_perumahan"
-            value={filters.name}
+            value={filters.nama_perumahan}
             onChange={handleChange}
             placeholder="Search..."
           />
@@ -28,14 +53,14 @@ const FilterList = ({ filters, setFilters }) => {
             name="kecamatan"
             value={filters.kecamatan}
             onChange={handleChange}
-            options={KECAMATAN}
+            options={uniqueValues.kecamatan}
           />
           <FormSelect
             labelText="Tipe"
             name="tipe"
             value={filters.tipe}
             onChange={handleChange}
-            options={TIPE_RUMAH}
+            options={uniqueValues.tipe}
           />
         </div>
       </div>

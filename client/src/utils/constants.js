@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 
 export const KECAMATAN = [
+  "Bukit Raya",
   "Pekanbaru Kota",
   "Tampan",
+  "Tenayan Raya",
+  "Sail",
   "Sukajadi",
-  "Marpoyan Damai",
+  "Payung Sekaki",
+  "Senapelan",
+  "Lima Puluh",
   "Rumbai",
+  "Rumbai Pesisir",
 ];
 
 export const TIPE_RUMAH = [36, 45, 54, 60];

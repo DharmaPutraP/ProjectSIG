@@ -3,14 +3,22 @@ import FilterList from "../components/FilterList";
 import DataTableComponent from "../components/DataTableComponents";
 import Map from "../components/Map";
 import { getAll } from "../utils/api";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const [filters, setFilters] = useState({
-    nama_perumahan: "",
-    kecamatan: "",
-    tipe: "",
-    harga: "",
-  });
+  const location = useLocation();
+  const navigate = useNavigate();
+  const parseUrlParams = () => {
+    const urlParams = new URLSearchParams(location.search);
+    return {
+      nama_perumahan: urlParams.get("nama_perumahan") || "",
+      kecamatan: urlParams.get("kecamatan") || "",
+      tipe: urlParams.get("tipe") || "",
+      harga: urlParams.get("harga") || "",
+    };
+  };
+  const [filters, setFilters] = useState(parseUrlParams());
+
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -26,6 +34,12 @@ const Home = () => {
 
     fetchData();
   }, []);
+
+  useEffect(() => {
+    // Update URL with the current filter values
+    const queryParams = new URLSearchParams(filters);
+    navigate(`?${queryParams.toString()}`, { replace: true });
+  }, [filters, navigate]);
 
   const filteredData = data.filter((item) => {
     return (
@@ -49,7 +63,8 @@ const Home = () => {
           longitude: d.y,
           name: d.nama_perumahan,
           address: d.alamat,
-          id: d.id,
+          id: d._id,
+          kecamatan: d.kecamatan,
         }))}
       />
     </>

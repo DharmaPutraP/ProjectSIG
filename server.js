@@ -16,7 +16,6 @@ import perumahanRoutes from "./routes/perumahanRoutes.js";
 // const perumahanRoutes = require("./routes/perumahanRoutes");
 app.use("/api/perumahan", perumahanRoutes);
 
-
 import mongoose from "mongoose";
 
 // Koneksi ke MongoDB
