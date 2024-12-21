@@ -29,20 +29,19 @@ export const columnsTabel = [
     filterable: true,
   },
   {
-    name: "Luas Tanah",
-    selector: (row) => row.luas_tanah,
-    sortable: true,
-    filterable: true,
-  },
-  {
     name: "Kecamatan",
     selector: (row) => row.kecamatan,
     sortable: true,
     filterable: true,
   },
   {
-    name: "No. Telp",
-    selector: (row) => row.nomor_hp,
+    name: "Harga",
+    selector: (row) => {
+      return new Intl.NumberFormat("id-ID", {
+        style: "currency",
+        currency: "IDR",
+      }).format(row.harga);
+    },
   },
   {
     name: "Detail",

@@ -14,7 +14,9 @@
   padding: 10px 30px;
   border-radius: 25px;
 }
-
+img {
+  pointer-events: none;
+}
 @layer utilities {
   .container {
     @apply font-[poppins] mt-[2rem] mx-auto max-w-[1252px] px-5 sm:px-10 lg:px-0;
@@ -27,6 +29,6 @@
     @apply block text-sm mb-1 capitalize tracking-wide;
   }
   .btn {
-    @apply bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full;
+    @apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full;
   }
 }

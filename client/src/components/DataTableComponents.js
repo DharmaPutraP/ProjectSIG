@@ -3,9 +3,18 @@ import { columnsTabel } from "../utils/constants";
 
 const DataTableComponent = ({ data }) => {
   const customStyles = {
+    table: {
+      minHeight: "auto",
+    },
+    tableWrapper: {
+      style: {
+        maxHeight: "250px", // Adjust this based on your row height (~50px * 5 rows)
+        overflowY: "auto", // Enable scrolling for the table body
+      },
+    },
     rows: {
       style: {
-        minHeight: "72px", // Overriding row height
+        minHeight: "50px", // Overriding row height
       },
     },
     headCells: {
@@ -26,6 +35,8 @@ const DataTableComponent = ({ data }) => {
         highlightOnHover
         responsive
         customStyles={customStyles}
+        fixedHeader
+        fixedHeaderScrollHeight="320px"
       />
     </div>
   );
