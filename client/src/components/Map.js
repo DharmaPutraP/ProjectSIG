@@ -1,50 +1,83 @@
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet"; // Leaflet is required for certain customizations
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
-const zoomLevel = 13;
+const Map = ({ locations, style = "h-screen", mapCenter }) => {
+  const UpdateMapView = ({ center }) => {
+    const map = useMap();
+    useEffect(() => {
+      if (center) {
+        map.flyTo([center.latitude, center.longitude], center.zoom, {
+          duration: 1.5,
+        });
+      }
+    }, [center, map]);
+    return null;
+  };
 
-const Map = ({ locations, style = "h-screen" }) => {
   const markerIcon = new L.Icon({
     iconUrl: `${process.env.REACT_APP_MARKERICON_URI}/icon_rumah.png`,
     iconSize: [20, 20],
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
   });
-  const locationArray = Array.isArray(locations) ? locations : [locations];
-  const center = Array.isArray(locations)
-    ? [0.51044, 101.438309]
-    : [locations.latitude, locations.longitude];
 
   return (
-    <MapContainer center={center} zoom={zoomLevel} className={`mt-10 ${style}`}>
+    <MapContainer
+      center={[mapCenter.latitude, mapCenter.longitude]}
+      zoom={mapCenter.zoom}
+      className={`mt-10 ${style}`}
+    >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      {locationArray.map((location, index) => (
+      {Array.isArray(locations) &&
+        locations.map((location, index) => (
+          <Marker
+            key={index}
+            position={[location.latitude, location.longitude]}
+            icon={markerIcon}
+          >
+            <Popup>
+              <b>{location.name}</b>
+              <p>{location.address}</p>
+              <img
+                src={`${process.env.REACT_APP_MARKERICON_URI}/${location.kecamatan}/${location.name}.jpg`}
+                alt="Gambar"
+                width={100}
+              />
+              <p>
+                <Link to={`/detail/${location.id}`}>
+                  <button className="btn">Detail</button>
+                </Link>
+              </p>
+            </Popup>
+          </Marker>
+        ))}
+      {!Array.isArray(locations) && (
         <Marker
-          key={index}
-          position={[location.latitude, location.longitude]}
-          center={center}
+          position={[locations.latitude, locations.longitude]}
           icon={markerIcon}
         >
           <Popup>
-            <b>{location.name}</b>
-            <p>{location.address}</p>
+            <b>{locations.name}</b>
+            <p>{locations.address}</p>
             <img
-              src={`${process.env.REACT_APP_MARKERICON_URI}/${location.kecamatan}/${location.name}.jpg`}
+              src={`${process.env.REACT_APP_MARKERICON_URI}/${locations.kecamatan}/${locations.name}.jpg`}
               alt="Gambar"
               width={100}
             />
             <p>
-              <Link to={`/detail/${location.id}`}>
+              <Link to={`/detail/${locations.id}`}>
                 <button className="btn">Detail</button>
               </Link>
             </p>
           </Popup>
         </Marker>
-      ))}
+      )}
+      <UpdateMapView center={mapCenter} />
     </MapContainer>
   );
 };
