@@ -1,4 +1,30 @@
 import Perumahan from "../models/perumahanModel.js";
+import { StatusCodes } from "http-status-codes";
+import multer from "multer";
+import fs from "fs";
+import path from "path";
+
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    const kecamatan = req.body.kecamatan;
+    const uploadPath = path.join("public", kecamatan);
+
+    // Create the kecamatan folder if it doesn't exist
+    if (!fs.existsSync(uploadPath)) {
+      fs.mkdirSync(uploadPath, { recursive: true });
+    }
+
+    cb(null, uploadPath);
+  },
+  filename: (req, file, cb) => {
+    const filename = `${req.body.nama_perumahan.replace(
+      / /g,
+      "_"
+    )}${path.extname(file.originalname)}`;
+    cb(null, filename);
+  },
+});
+const upload = multer({ storage });
 
 export const getAll = async (req, res) => {
   try {
@@ -54,3 +80,31 @@ export const getUniqueValues = async (req, res) => {
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
+
+export const createPerumahan = async (req, res) => {
+  try {
+    const { nama_perumahan, alamat, tipe, luas_tanah, kecamatan, nomor_hp } =
+      req.body;
+
+    // Save image path in the database
+    const imgUrl = `/${kecamatan}/${req.file.filename}`;
+
+    const newPerumahan = await Perumahan.create({
+      nama_perumahan,
+      alamat,
+      tipe,
+      luas_tanah,
+      harga,
+      isAvailable,
+      y,
+      x,
+      kecamatan,
+      nomor_hp,
+      imgUrl,
+    });
+    res.status(StatusCodes.CREATED).json(newPerumahan);
+  } catch (error) {
+    res.status(StatusCodes.BAD_REQUEST).json({ message: error.message });
+  }
+};
+export const uploadImage = upload.single("image");

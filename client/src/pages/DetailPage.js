@@ -59,7 +59,7 @@ const DetailPage = () => {
       />
       <div className="pt-10 flex flex-col sm:flex-row justify-between items-center w-full">
         <img
-          src={`/${perumahan.kecamatan}/${perumahan.nama_perumahan}.jpg`}
+          src={`${process.env.REACT_APP_IMAGE_URL}/${perumahan.kecamatan}/${perumahan.nama_perumahan}.jpg`}
           alt={perumahan.nama_perumahan}
           width={350}
         />

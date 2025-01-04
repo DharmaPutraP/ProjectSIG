@@ -42,6 +42,7 @@ export const columnsTabel = [
   },
   {
     name: "Harga",
+    sortable: true,
     selector: (row) => {
       return new Intl.NumberFormat("id-ID", {
         style: "currency",

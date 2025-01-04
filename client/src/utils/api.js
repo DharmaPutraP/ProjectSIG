@@ -1,14 +1,21 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/perumahan",
+  baseURL: process.env.REACT_APP_API_URL,
 });
 
 // Ambil semua data perumahan
-export const getAll = () => API.get("/detail");
+export const getAll = () => API.get("/perumahan/detail");
 
 // Ambil data perumahan berdasarkan ID
-export const getById = (id) => API.get(`/detail/${id}`);
+export const getById = (id) => API.get(`/perumahan/detail/${id}`);
 
 export const getUniqueValues = (column) =>
-  API.get(`/unique-values?column=${column}`);
+  API.get(`/perumahan/unique-values?column=${column}`);
+export const createPerumahan = (data) =>
+  API.post("/perumahan/create", data, {
+    headers: { "Content-Type": "multipart/form-data" },
+  });
+
+export const toLogin = (data) => API.post("/auth/login", data);
+export const toLogout = () => API.get("/auth/logout");

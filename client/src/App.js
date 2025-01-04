@@ -1,5 +1,15 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { HomeLayout, Home, DetailPage, Dashboard } from "./pages";
+import {
+  HomeLayout,
+  Home,
+  DetailPage,
+  Dashboard,
+  Login,
+  Logout,
+  Create,
+} from "./pages";
+
+import { action as loginAction } from "./pages/Login";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +30,30 @@ const router = createBrowserRouter([
         element: <DetailPage />,
       },
     ],
+  },
+  {
+    path: "/admin",
+    element: <HomeLayout />,
+    errorElement: <>error woi</>,
+    children: [
+      {
+        index: true,
+        element: <div>Silahkan Akses Feature Admin</div>,
+      },
+      {
+        path: "create",
+        element: <Create />,
+      },
+    ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
+    action: loginAction,
+  },
+  {
+    path: "/logout",
+    element: <Logout />,
   },
 ]);
 
