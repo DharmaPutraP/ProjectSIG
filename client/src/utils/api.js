@@ -2,6 +2,7 @@ import axios from "axios";
 
 const API = axios.create({
   baseURL: process.env.REACT_APP_API_URL,
+  withCredentials: true,
 });
 
 // Ambil semua data perumahan
@@ -16,6 +17,7 @@ export const createPerumahan = (data) =>
   API.post("/perumahan/create", data, {
     headers: { "Content-Type": "multipart/form-data" },
   });
+export const deletePerumahan = (id) => API.delete(`/perumahan/${id}`);
 
 export const toLogin = (data) => API.post("/auth/login", data);
 export const toLogout = () => API.get("/auth/logout");

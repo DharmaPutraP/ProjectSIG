@@ -5,11 +5,16 @@ import CardList from "../components/CardList";
 import Map from "../components/Map";
 import { getAll } from "../utils/api";
 import { useLocation, useNavigate } from "react-router-dom";
-import { ToggleSlider } from "react-toggle-slider";
+import Swal from "sweetalert2";
+import { toast } from "react-toastify";
+import { deletePerumahan } from "../utils/api";
 
 const Home = () => {
+  const [refreshKey, setRefreshKey] = useState(0);
   const location = useLocation();
   const navigate = useNavigate();
+  const userRole = JSON.parse(localStorage.getItem("user"))?.role || "guest";
+
   const parseUrlParams = () => {
     const urlParams = new URLSearchParams(location.search);
     return {
@@ -40,7 +45,7 @@ const Home = () => {
     };
 
     fetchData();
-  }, []);
+  }, [refreshKey]);
 
   useEffect(() => {
     // Update URL with the current filter values
@@ -63,6 +68,29 @@ const Home = () => {
   const [view, setView] = useState("table");
   const toggleView = () => {
     setView((prevView) => (prevView === "table" ? "list" : "table"));
+  };
+
+  const handleDelete = async (id) => {
+    Swal.fire({
+      title: "Apakah ingin menghapus?",
+      text: "Kamu tidak dapat mengembalikanya",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+      confirmButtonText: "Hapus!",
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        try {
+          await deletePerumahan(id);
+          Swal.fire("Deleted!", "Perumahan Berhasil Dihapus.", "success");
+          setRefreshKey((prevKey) => prevKey + 1);
+          // Trigger a refresh or re-fetch the data
+        } catch (error) {
+          toast.error("Failed to delete Perumahan");
+        }
+      }
+    });
   };
   return (
     <>
@@ -111,7 +139,11 @@ const Home = () => {
         </div>
       ) : (
         <>
-          <DataTableComponent data={filteredData} />
+          <DataTableComponent
+            data={filteredData}
+            role={userRole}
+            handleDelete={handleDelete}
+          />
           <Map
             locations={filteredData.map((d) => ({
               latitude: d.x,

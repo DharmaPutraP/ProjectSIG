@@ -7,6 +7,7 @@ const InputLogin = ({
   placeholder,
   disabled = false,
   className,
+  onChange,
 }) => {
   return (
     <div className={`sm:mb-[1rem] w-60 ${className}`} style={style}>
@@ -22,6 +23,7 @@ const InputLogin = ({
           defaultValue={defaultValue || ""}
           required
           disabled={disabled}
+          onChange={onChange}
         />
       </div>
     </div>

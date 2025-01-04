@@ -6,6 +6,7 @@ import {
   getUniqueValues,
   createPerumahan,
   uploadImage,
+  deletePerumahan,
 } from "../controller/perumahanController.js";
 import {
   authenticateUser,
@@ -22,9 +23,15 @@ router.get("/unique-values", getUniqueValues); // New route for dropdown values
 router.post(
   "/create",
   authenticateUser,
-  authorizedPermissionsSettings(["admin"]),
+  authorizedPermissionsSettings("admin"),
   uploadImage,
   createPerumahan
+);
+router.delete(
+  "/:id",
+  authenticateUser,
+  authorizedPermissionsSettings("admin"),
+  deletePerumahan
 );
 
 export default router;

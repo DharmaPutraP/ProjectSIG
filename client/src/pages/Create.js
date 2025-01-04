@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { createPerumahan } from "../utils/api";
 import { toast } from "react-toastify";
 import { FormInput, FormSelect, SubmitBtn, InputLogin } from "../components";
+import { KECAMATAN } from "../utils/constants";
 
 const Create = () => {
   const [formData, setFormData] = useState({
@@ -14,7 +15,7 @@ const Create = () => {
     isAvailable: "Available",
     y: "",
     x: "",
-    kecamatan: "",
+    kecamatan: "Bukit Raya",
     nomor_hp: "",
     image: null,
   });
@@ -27,21 +28,28 @@ const Create = () => {
   };
 
   const handleFileChange = (e) => {
-    setFormData({ ...formData, image: e.target.files[0] }); // Save the selected file
+    const file = e.target.files[0];
+    console.log(file);
+    if (file) {
+      const validTypes = ["image/jpeg"];
+      if (!validTypes.includes(file.type)) {
+        toast.error("Only JPG");
+        return;
+      }
+      setFormData((prev) => ({ ...prev, image: file })); // Update state with file
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Create FormData to include file and other fields
-    console.log("Form Data State:", formData);
-
     const form = new FormData();
     for (const key in formData) {
       form.append(key, formData[key]);
     }
 
-    console.log(form);
+    // console.log("FormData Content:", [...form.entries()]);
 
     try {
       await createPerumahan(form);
@@ -117,15 +125,13 @@ const Create = () => {
           icon={false}
           className="w-5/6"
         />
-        <FormInput
-          type="text"
-          labelText="Kecamatan"
+        <FormSelect
           name="kecamatan"
-          placeholder="Kecamatan"
+          labelText="Kecamatan"
           value={formData.kecamatan}
           onChange={handleChange}
-          required
-          icon={false}
+          options={KECAMATAN}
+          defaults={false}
           className="w-5/6"
         />
         <FormInput
@@ -170,15 +176,6 @@ const Create = () => {
           icon={false}
           className="w-5/6"
         />
-        {/* <FormInput
-          type="file"
-          labelText="Gambar Perumahan"
-          name="image"
-          onChange={handleFileChange}
-          required
-          icon={false}
-          className="w-5/6"
-        /> */}
         <InputLogin
           type="file"
           labelText="Gambar Perumahan"

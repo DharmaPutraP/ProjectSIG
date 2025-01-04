@@ -34,7 +34,10 @@ const CardList = ({
         onClick={handleSingleClick}
         onDoubleClick={handleDoubleClick}
       >
-        <img src={`${gambar}`} className="rounded-md w-[6rem] h-[5rem]" />
+        <img
+          src={`${process.env.REACT_APP_IMAGE_URL}/${gambar}`}
+          className="rounded-md w-[6rem] h-[5rem]"
+        />
         <div className="ms-2">
           <p className="text-sm">{nama}</p>
           <p className="text-xs text-gray-500">{cutAddress(`${alamat}`)}</p>

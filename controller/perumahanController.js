@@ -24,7 +24,16 @@ const storage = multer.diskStorage({
     cb(null, filename);
   },
 });
-const upload = multer({ storage });
+
+const fileFilter = (req, file, cb) => {
+  if (file.mimetype === "image/jpeg") {
+    cb(null, true); // Accept the file
+  } else {
+    cb(new Error("Only JPG files are allowed"), false); // Reject the file
+  }
+};
+
+const upload = multer({ storage, fileFilter });
 
 export const getAll = async (req, res) => {
   try {
@@ -83,8 +92,23 @@ export const getUniqueValues = async (req, res) => {
 
 export const createPerumahan = async (req, res) => {
   try {
-    const { nama_perumahan, alamat, tipe, luas_tanah, kecamatan, nomor_hp } =
-      req.body;
+    if (!req.file) {
+      return res
+        .status(400)
+        .json({ message: "Image upload failed. Only JPG files are allowed." });
+    }
+    const {
+      nama_perumahan,
+      alamat,
+      tipe,
+      luas_tanah,
+      harga,
+      isAvailable,
+      y,
+      x,
+      kecamatan,
+      nomor_hp,
+    } = req.body;
 
     // Save image path in the database
     const imgUrl = `/${kecamatan}/${req.file.filename}`;
@@ -102,9 +126,43 @@ export const createPerumahan = async (req, res) => {
       nomor_hp,
       imgUrl,
     });
+    console.log(newPerumahan);
     res.status(StatusCodes.CREATED).json(newPerumahan);
   } catch (error) {
     res.status(StatusCodes.BAD_REQUEST).json({ message: error.message });
+  }
+};
+
+export const deletePerumahan = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    // Find the perumahan data
+    const perumahan = await Perumahan.findById(id);
+    if (!perumahan) {
+      return res
+        .status(StatusCodes.NOT_FOUND)
+        .json({ message: "Data not found" });
+    }
+
+    // Construct the image path
+    const imagePath = path.join("public", perumahan.imgUrl);
+
+    // Delete the image file
+    if (fs.existsSync(imagePath)) {
+      fs.unlinkSync(imagePath);
+    }
+
+    // Delete the perumahan data
+    await Perumahan.findByIdAndDelete(id);
+
+    res
+      .status(StatusCodes.OK)
+      .json({ message: "Perumahan deleted successfully" });
+  } catch (error) {
+    res
+      .status(StatusCodes.INTERNAL_SERVER_ERROR)
+      .json({ message: "Failed to delete data" });
   }
 };
 export const uploadImage = upload.single("image");

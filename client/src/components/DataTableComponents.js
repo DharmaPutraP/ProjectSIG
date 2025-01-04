@@ -1,7 +1,7 @@
 import DataTable from "react-data-table-component";
 import { columnsTabel } from "../utils/constants";
 
-const DataTableComponent = ({ data }) => {
+const DataTableComponent = ({ data, role, handleDelete }) => {
   const customStyles = {
     table: {
       minHeight: "auto",
@@ -26,10 +26,12 @@ const DataTableComponent = ({ data }) => {
     },
   };
 
+  const columns = columnsTabel(role, handleDelete);
+
   return (
     <div className="mt-10 border-2 border-sky-300">
       <DataTable
-        columns={columnsTabel}
+        columns={columns}
         data={data}
         pagination
         highlightOnHover
