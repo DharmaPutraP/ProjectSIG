@@ -52,15 +52,18 @@ export const columnsTabel = (role, handleDelete) => {
         }).format(row.harga);
       },
     },
-    {
+  ];
+
+  if (role === "guest") {
+    columns.push({
       name: "Detail",
       cell: (row) => (
         <Link to={`/detail/${row._id}`}>
           <button className="btn">Detail</button>
         </Link>
       ),
-    },
-  ];
+    });
+  }
 
   // Add "Aksi" column if the user is an admin
   if (role === "admin") {
@@ -68,10 +71,13 @@ export const columnsTabel = (role, handleDelete) => {
       name: "Aksi",
       cell: (row) => (
         <>
-          <Link to={`/edit/${row._id}`}>
+          <Link to={`/admin/edit/${row._id}`}>
             <button className="btn !bg-yellow-500">Edit</button>
           </Link>
-          <button className="btn !bg-red-500 ms-4" onClick={() => handleDelete(row._id)}>
+          <button
+            className="btn !bg-red-500 ms-4"
+            onClick={() => handleDelete(row._id)}
+          >
             Delete
           </button>
         </>

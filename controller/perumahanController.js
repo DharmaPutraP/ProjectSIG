@@ -17,16 +17,18 @@ const storage = multer.diskStorage({
     cb(null, uploadPath);
   },
   filename: (req, file, cb) => {
-    const filename = `${req.body.nama_perumahan.replace(
-      / /g,
-      "_"
-    )}${path.extname(file.originalname)}`;
+    const sanitizedFilename = req.body.nama_perumahan.replace(
+      /[^a-zA-Z0-9\s]/g,
+      ""
+    );
+    const filename = `${sanitizedFilename}${path.extname(file.originalname)}`;
     cb(null, filename);
   },
 });
 
 const fileFilter = (req, file, cb) => {
-  if (file.mimetype === "image/jpeg") {
+  const allowedTypes = ["image/jpeg"];
+  if (allowedTypes.includes(file.mimetype)) {
     cb(null, true); // Accept the file
   } else {
     cb(new Error("Only JPG files are allowed"), false); // Reject the file
@@ -130,6 +132,52 @@ export const createPerumahan = async (req, res) => {
     res.status(StatusCodes.CREATED).json(newPerumahan);
   } catch (error) {
     res.status(StatusCodes.BAD_REQUEST).json({ message: error.message });
+  }
+};
+
+export const updatePerumahan = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    // Find the existing record
+    const perumahan = await Perumahan.findById(id);
+    if (!perumahan) {
+      return res
+        .status(StatusCodes.NOT_FOUND)
+        .json({ message: "Data not found" });
+    }
+
+    // Handle image update
+    let imgUrl = perumahan.imgUrl; // Default to the existing image URL
+    if (req.file) {
+      const allowedTypes = ["image/jpeg"];
+      if (!allowedTypes.includes(req.file.mimetype)) {
+        return res.status(400).json({
+          message: "Invalid file type. Only JPG are allowed.",
+        });
+      }
+
+      const oldImagePath = path.join("public", perumahan.imgUrl);
+      if (fs.existsSync(oldImagePath)) {
+        fs.unlinkSync(oldImagePath);
+      }
+
+      // Set the new image path
+      imgUrl = `/${req.body.kecamatan}/${req.file.filename}`;
+    }
+
+    // Update the record in the database
+    const updatedData = await Perumahan.findByIdAndUpdate(
+      id,
+      { ...req.body, imgUrl },
+      { new: true }
+    );
+
+    res.status(StatusCodes.OK).json(updatedData);
+  } catch (error) {
+    res
+      .status(StatusCodes.INTERNAL_SERVER_ERROR)
+      .json({ message: error.message });
   }
 };
 

@@ -17,6 +17,10 @@ export const createPerumahan = (data) =>
   API.post("/perumahan/create", data, {
     headers: { "Content-Type": "multipart/form-data" },
   });
+export const updatePerumahan = (id, data) =>
+  API.put(`/perumahan/${id}`, data, {
+    headers: { "Content-Type": "multipart/form-data" },
+  });
 export const deletePerumahan = (id) => API.delete(`/perumahan/${id}`);
 
 export const toLogin = (data) => API.post("/auth/login", data);

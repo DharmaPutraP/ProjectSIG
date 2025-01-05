@@ -7,6 +7,8 @@ import {
   Login,
   Logout,
   Create,
+  Edit,
+  Admin,
 } from "./pages";
 
 import { action as loginAction } from "./pages/Login";
@@ -38,11 +40,15 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <div>Silahkan Akses Feature Admin</div>,
+        element: <Admin />,
       },
       {
         path: "create",
         element: <Create />,
+      },
+      {
+        path: "edit/:id",
+        element: <Edit />,
       },
     ],
   },

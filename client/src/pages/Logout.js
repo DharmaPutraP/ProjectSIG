@@ -17,7 +17,7 @@ const Logout = () => {
         toast.success("Berhasil Logout");
 
         // Redirect to login page
-        navigate("/login");
+        navigate("/");
       } catch (error) {
         toast.error("Error logging out. Please try again.");
         navigate("/login"); // Redirect to login even if logout fails

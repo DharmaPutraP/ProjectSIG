@@ -6,6 +6,7 @@ import {
   getUniqueValues,
   createPerumahan,
   uploadImage,
+  updatePerumahan,
   deletePerumahan,
 } from "../controller/perumahanController.js";
 import {
@@ -32,6 +33,14 @@ router.delete(
   authenticateUser,
   authorizedPermissionsSettings("admin"),
   deletePerumahan
+);
+
+router.put(
+  "/:id",
+  authenticateUser,
+  authorizedPermissionsSettings("admin"),
+  uploadImage, 
+  updatePerumahan
 );
 
 export default router;

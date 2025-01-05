@@ -7,3 +7,4 @@ export { default as Map } from "./Map";
 export { default as CardList } from "./CardList";
 export { default as SubmitBtn } from "./SubmitBtn";
 export { default as InputLogin } from "./InputLogin";
+export { default as Button } from "./Button";

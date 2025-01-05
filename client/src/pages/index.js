@@ -6,3 +6,6 @@ export { default as Dashboard } from "./Dashboard";
 export { default as Login } from "./Login";
 export { default as Logout } from "./Logout";
 export { default as Create } from "./Create";
+export { default as Admin } from "./Admin";
+export { default as Footer } from "./Footer";
+export { default as Edit } from "./Edit";
