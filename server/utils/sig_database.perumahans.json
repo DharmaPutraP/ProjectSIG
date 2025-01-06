@@ -1,0 +1,1202 @@
+[{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860616"
+  },
+  "nama_perumahan": "Perumahan Abinaya Residence",
+  "alamat": "Jl. Bundo Kandung No.A11, Labuh Baru Bar., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292",
+  "tipe": 82,
+  "luas_tanah": 120,
+  "harga": 795000000,
+  "isAvailable": "Available",
+  "nomor_hp": 6281365328534,
+  "y": 101.4131,
+  "x": 0.5031,
+  "kecamatan": "Payung Sekaki",
+  "imgUrl": "/Payung Sekaki/Perumahan Abinaya Residence.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860617"
+  },
+  "nama_perumahan": "Komplek Sari Residence",
+  "alamat": "Jl. Pemuda No.1, Tampan, Kec. Payung Sekaki, Kota Pekanbaru, Riau 28291",
+  "tipe": 84,
+  "luas_tanah": 105,
+  "harga": 890000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "628117514779"
+  },
+  "y": 101.4194,
+  "x": 0.5447,
+  "kecamatan": "Payung Sekaki",
+  "imgUrl": "/Payung Sekaki/Komplek Sari Residence.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860618"
+  },
+  "nama_perumahan": "Rumah Minimalis Pekanbaru Palm Leaves",
+  "alamat": "Jl. Dharma Bakti, Labuh Baru Barat, Payung Sekaki, Pekanbaru City, Riau 28292",
+  "tipe": 60,
+  "luas_tanah": 134,
+  "harga": 976000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281335716679"
+  },
+  "y": 101.3967,
+  "x": 0.5186,
+  "kecamatan": "Payung Sekaki",
+  "imgUrl": "/Payung Sekaki/Rumah Minimalis Pekanbaru Palm Leaves.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860619"
+  },
+  "nama_perumahan": "Villa Permata Indah Pekanbaru",
+  "alamat": "Jl. Permata Bandarraya, RT.04/RW.05, Payung Sekaki, Pekanbaru City, Riau",
+  "tipe": 131,
+  "luas_tanah": 125,
+  "harga": 1050000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6282386256650"
+  },
+  "y": 101.4078,
+  "x": 0.4769,
+  "kecamatan": "Payung Sekaki",
+  "imgUrl": "/Payung Sekaki/Villa Permata Indah Pekanbaru.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686061a"
+  },
+  "nama_perumahan": "Helona Cluster 2",
+  "alamat": "Jl. Dharma Bakti Gg. Sidodadi I, Labuh Baru Bar., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292",
+  "tipe": 115,
+  "luas_tanah": 115,
+  "harga": 825000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6285265564890"
+  },
+  "y": 101.4103,
+  "x": 0.5189,
+  "kecamatan": "Payung Sekaki",
+  "imgUrl": "/Payung Sekaki/Helona Cluster 2.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686061b"
+  },
+  "nama_perumahan": "Bumi Beringin Asri",
+  "alamat": "Jl. Karya mandiri. Perum bumi beringin asri blok B1. Kel. Sungai sibam. Kec. Payung sekaki. Pekanbaru",
+  "tipe": 36,
+  "luas_tanah": 108,
+  "harga": 120000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6282174767620"
+  },
+  "y": 101.3681,
+  "x": 0.5044,
+  "kecamatan": "Payung Sekaki",
+  "imgUrl": "/Payung Sekaki/Bumi Beringin Asri.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686061c"
+  },
+  "nama_perumahan": "Perumahan Wahana Graha Mandiri 3",
+  "alamat": "Jl. Bahkapul, Labuh Baru Barat, Payung Sekaki, Pekanbaru City, Riau 28292",
+  "tipe": 36,
+  "luas_tanah": 95,
+  "harga": 150000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6282390097007"
+  },
+  "y": 101.3947,
+  "x": 0.5158,
+  "kecamatan": "Payung Sekaki",
+  "imgUrl": "/Payung Sekaki/Perumahan Wahana Graha Mandiri 3.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686061d"
+  },
+  "nama_perumahan": "Kompleks Fajar Jaya Residence",
+  "alamat": "Jl. Fajar, Labuh Baru Bar., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292",
+  "tipe": 60,
+  "luas_tanah": 121,
+  "harga": 525000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6285265369718"
+  },
+  "y": 101.4014,
+  "x": 0.505,
+  "kecamatan": "Payung Sekaki",
+  "imgUrl": "/Payung Sekaki/Kompleks Fajar Jaya Residence.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686061e"
+  },
+  "nama_perumahan": "Perumahan Sandhira Tahap Ii",
+  "alamat": "Jl. Kuda Laut, Tengkerang Tim., Kec. Tenayan Raya, Kota Pekanbaru, Riau 28282",
+  "tipe": 50,
+  "luas_tanah": 120,
+  "harga": 385000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281392666631"
+  },
+  "y": 101.4914,
+  "x": 0.4739,
+  "kecamatan": "Senapelan",
+  "imgUrl": "/Senapelan/Perumahan Sandhira Tahap Ii.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686061f"
+  },
+  "nama_perumahan": "Palma Residence",
+  "alamat": "Jl. HR Soebrantas Sidomulyo Barat, Tampan, Pekanbaru City, Riau 28294",
+  "tipe": 64,
+  "luas_tanah": 134,
+  "harga": 525000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281317692011"
+  },
+  "y": 101.4731,
+  "x": 0.5033,
+  "kecamatan": "Senapelan",
+  "imgUrl": "/Senapelan/Palma Residence.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860620"
+  },
+  "nama_perumahan": "Citra Madani Residence",
+  "alamat": "Jl. Lembah Sari, Rumbai Pesisir, Pekanbaru City, Riau 28266",
+  "tipe": 36,
+  "luas_tanah": 96,
+  "harga": 162000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281371580011"
+  },
+  "y": 101.4539,
+  "x": 0.5778,
+  "kecamatan": "Senapelan",
+  "imgUrl": "/Senapelan/Citra Madani Residence.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860621"
+  },
+  "nama_perumahan": "Perumahan D’Vista Residence Tegalsari",
+  "alamat": "Jl. Tegalsari No.Ujung, Umban Sari, Kec. Rumbai, Kota Pekanbaru, Riau 28266",
+  "tipe": 95,
+  "luas_tanah": 177,
+  "harga": 950000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282386197419"
+  },
+  "y": 101.4208,
+  "x": 0.5617,
+  "kecamatan": "Senapelan",
+  "imgUrl": "/Senapelan/Perumahan D’Vista Residence Tegalsari.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860622"
+  },
+  "nama_perumahan": "Dieng Residence",
+  "alamat": "Jl. Tegalsari, Umban Sari, Kec. Rumbai, Kota Pekanbaru, Riau 28266",
+  "tipe": 54,
+  "luas_tanah": 120,
+  "harga": 450000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6281275127454"
+  },
+  "y": 101.4247,
+  "x": 0.5644,
+  "kecamatan": "Senapelan",
+  "imgUrl": "/Senapelan/Dieng Residence.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860623"
+  },
+  "nama_perumahan": "Perumahan Al-Mayara",
+  "alamat": "Jl. Merak Sakti No.3, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 28292",
+  "tipe": 68,
+  "luas_tanah": 120,
+  "harga": 821000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282172976969"
+  },
+  "y": 101.3883,
+  "x": 0.4661,
+  "kecamatan": "Lima Puluh",
+  "imgUrl": "/Lima Puluh/Perumahan Al-Mayara.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860624"
+  },
+  "nama_perumahan": "Bella Vista Garden ",
+  "alamat": "Jl. Cemara Gading/ Jl. Pemda Tampan - Arengka, Delima, Tampan, Pekanbaru City, Riau 28292",
+  "tipe": 160,
+  "luas_tanah": 200,
+  "harga": 1700000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281261605133"
+  },
+  "y": 101.4144444,
+  "x": 0.504444444,
+  "kecamatan": "Lima Puluh",
+  "imgUrl": "/Lima Puluh/Bella Vista Garden .jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860625"
+  },
+  "nama_perumahan": "Royal Santika Residence",
+  "alamat": "Jl. Medang Bakar IV, Labuh Baru Bar., Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292",
+  "tipe": 100,
+  "luas_tanah": 166,
+  "harga": 950000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281364227559"
+  },
+  "y": 101.4144444,
+  "x": 0.504444444,
+  "kecamatan": "Lima Puluh",
+  "imgUrl": "/Lima Puluh/Royal Santika Residence.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860626"
+  },
+  "nama_perumahan": "Perumahan Cluster Rio Village Harmony",
+  "alamat": "Jl. Purwodadi, Panam Kota Pekanbaru, Riau",
+  "tipe": 74,
+  "luas_tanah": 120,
+  "harga": 485000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282387441049"
+  },
+  "y": 101.4002778,
+  "x": 0.441388889,
+  "kecamatan": "Lima Puluh",
+  "imgUrl": "/Lima Puluh/Perumahan Cluster Rio Village Harmony.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860628"
+  },
+  "nama_perumahan": "Perumahan Arafah Rumbai",
+  "alamat": "Jl. Kurnia 1 No.36, Limbungan Baru, Kec. Rumbai Pesisir, Kota Pekanbaru, Riau 28266",
+  "tipe": 70,
+  "luas_tanah": 210,
+  "harga": 650000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281277358103"
+  },
+  "y": 101.4476716,
+  "x": 0.565750034,
+  "kecamatan": "Rumbai",
+  "imgUrl": "/Rumbai/Perumahan Arafah Rumbai.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860629"
+  },
+  "nama_perumahan": "Perumahan Griya Rumbai Lestari",
+  "alamat": "Jl. Limbungan Baru, Rumbai Pesisir, Pekanbaru City, Riau 28266",
+  "tipe": 36,
+  "luas_tanah": 108,
+  "harga": 166000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282287401407"
+  },
+  "y": 101.445252,
+  "x": 0.562653174,
+  "kecamatan": "Rumbai",
+  "imgUrl": "/Rumbai/Perumahan Griya Rumbai Lestari.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686062a"
+  },
+  "nama_perumahan": "Perum Rumbai Residence 2",
+  "alamat": "Jl. Pembina IV, Lembah Sari, Kec. Rumbai Pesisir, Kota Pekanbaru, Riau 28143",
+  "tipe": 36,
+  "luas_tanah": 108,
+  "harga": 150000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6281263961589"
+  },
+  "y": 101.4796511,
+  "x": 0.570440449,
+  "kecamatan": "Rumbai",
+  "imgUrl": "/Rumbai/Perum Rumbai Residence 2.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686062b"
+  },
+  "nama_perumahan": "Perumahan Graha Sadika Rumbai",
+  "alamat": "Jl. Geso 6, Umban Sari, Kec. Rumbai, Kota Pekanbaru, Riau 28266",
+  "tipe": 36,
+  "luas_tanah": 96,
+  "harga": 140000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6285278577961"
+  },
+  "y": 101.4206219,
+  "x": 0.577130994,
+  "kecamatan": "Rumbai",
+  "imgUrl": "/Rumbai/Perumahan Graha Sadika Rumbai.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686062c"
+  },
+  "nama_perumahan": "Perumahan Griya Indah Citra Rumbai",
+  "alamat": "Jl. Pembina IV, Limbungan, Kec. Rumbai Pesisir, Kota Pekanbaru, Riau 28261",
+  "tipe": 36,
+  "luas_tanah": 101,
+  "harga": 166000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282382088826"
+  },
+  "y": 101.4813504,
+  "x": 0.564260787,
+  "kecamatan": "Rumbai",
+  "imgUrl": "/Rumbai/Perumahan Griya Indah Citra Rumbai.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686062d"
+  },
+  "nama_perumahan": "Perumahan Rumbai Residence 4",
+  "alamat": "Jl. Lembah Sari, Rumbai, Pekanbaru City, Riau",
+  "tipe": 36,
+  "luas_tanah": 90,
+  "harga": 166000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281263961589"
+  },
+  "y": 101.4770755,
+  "x": 0.577269686,
+  "kecamatan": "Rumbai",
+  "imgUrl": "/Rumbai/Perumahan Rumbai Residence 4.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686062e"
+  },
+  "nama_perumahan": "Perumahan Bumi Tuah Negeri",
+  "alamat": "Jl. Anggrek, Lembah Sari, Kec. Rumbai Pesisir, Kota Pekanbaru, Riau 28143",
+  "tipe": 36,
+  "luas_tanah": 104,
+  "harga": 140000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6281364400066"
+  },
+  "y": 101.4851815,
+  "x": 0.572685004,
+  "kecamatan": "Rumbai Pesisir",
+  "imgUrl": "/Rumbai Pesisir/Perumahan Bumi Tuah Negeri.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686062f"
+  },
+  "nama_perumahan": "Perumahan Palma Residence",
+  "alamat": "Jl. Sepakat, Sidomulyo Barat, Tampan, Pekanbaru",
+  "tipe": 74,
+  "luas_tanah": 134,
+  "harga": 230000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6285263557757"
+  },
+  "y": 101.4065793,
+  "x": 0.462153059,
+  "kecamatan": "Tampan",
+  "imgUrl": "/Tampan/Perumahan Palma Residence.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860630"
+  },
+  "nama_perumahan": "Perumahan Teratai Garden",
+  "alamat": "Jl. Delima, Tampan, Pekanbaru",
+  "tipe": 64,
+  "luas_tanah": 96,
+  "harga": 180000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281258863077"
+  },
+  "y": 101.4039273,
+  "x": 0.489689538,
+  "kecamatan": "Tampan",
+  "imgUrl": "/Tampan/Perumahan Teratai Garden.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860631"
+  },
+  "nama_perumahan": "Perumahan Mitra Garden",
+  "alamat": "Jl. Amal Perum Mitra Garden No.B02, Tobekgodang, Kec. Tampan, Kota Pekanbaru, Riau 28292",
+  "tipe": 54,
+  "luas_tanah": 115,
+  "harga": 250000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282178696605"
+  },
+  "y": 101.408215,
+  "x": 0.478597813,
+  "kecamatan": "Tampan",
+  "imgUrl": "/Tampan/Perumahan Mitra Garden.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860632"
+  },
+  "nama_perumahan": "Perumahan Cluster Bali Pavilion Pekanbaru",
+  "alamat": "Jl. Siantan, RT.02/RW.09, Tengkerang Labuai, Kec. Bukit Raya, Kota Pekanbaru, Riau 28281",
+  "tipe": 118,
+  "luas_tanah": 162,
+  "harga": 1588000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "628117073707"
+  },
+  "y": 101.4727778,
+  "x": 0.476666667,
+  "kecamatan": "Bukit Raya",
+  "imgUrl": "/Bukit Raya/Perumahan Cluster Bali Pavilion Pekanbaru.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860633"
+  },
+  "nama_perumahan": "Perumahan Sinar Utama Residence",
+  "alamat": "Jl. Tengku Bey, Simpang Tiga, Kec. Bukit Raya, Kota Pekanbaru, Riau 28282",
+  "tipe": 78,
+  "luas_tanah": 105,
+  "harga": 600000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282378181889"
+  },
+  "y": 101.4616667,
+  "x": 0.471388889,
+  "kecamatan": "Bukit Raya",
+  "imgUrl": "/Bukit Raya/Perumahan Sinar Utama Residence.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860634"
+  },
+  "nama_perumahan": "Perumahan Griya Mutiara Asri 2",
+  "alamat": "Jl. Arifin Ahmad Simpang Tiga, Kec. Bukit Raya, Kota Pekanbaru, Riau 28289",
+  "tipe": 36,
+  "luas_tanah": 108,
+  "harga": 150000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "62811757665"
+  },
+  "y": 101.4861111,
+  "x": 0.462777778,
+  "kecamatan": "Bukit Raya",
+  "imgUrl": "/Bukit Raya/Perumahan Griya Mutiara Asri 2.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860635"
+  },
+  "nama_perumahan": "Perumahan Cafa Villa",
+  "alamat": "Jl. Labersa parit indah Simpang Tiga, Bukit Raya, Pekanbaru City, Riau 28282",
+  "tipe": 70,
+  "luas_tanah": 144,
+  "harga": 400000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6281321140404"
+  },
+  "y": 101.4766667,
+  "x": 0.449444444,
+  "kecamatan": "Bukit Raya",
+  "imgUrl": "/Bukit Raya/Perumahan Cafa Villa.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860636"
+  },
+  "nama_perumahan": "Perumahan Greenland Hangtuah",
+  "alamat": "Jl. Hangtuah Jl. Keluarga, Kelurahan Sialang Sakti, Kec. Tenayan Raya, Kota Pekanbaru, Riau 28131",
+  "tipe": 60,
+  "luas_tanah": 120,
+  "harga": 850000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6285265132335"
+  },
+  "y": 101.490365,
+  "x": 0.51126,
+  "kecamatan": "Tenayan Raya",
+  "imgUrl": "/Tenayan Raya/Perumahan Greenland Hangtuah.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860637"
+  },
+  "nama_perumahan": "Perumahan Asta Harmony",
+  "alamat": "Jl. Indra Puri, Rejosari, Kec. Tenayan Raya, Kota Pekanbaru, Riau 28142",
+  "tipe": 36,
+  "luas_tanah": 105,
+  "harga": 162000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6285365561149"
+  },
+  "y": 101.4941,
+  "x": 0.5267,
+  "kecamatan": "Tenayan Raya",
+  "imgUrl": "/Tenayan Raya/Perumahan Asta Harmony.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860638"
+  },
+  "nama_perumahan": "Perumahan Graha Timur Raya",
+  "alamat": "Jl. Bata Merah, Bencah Lesung, Kec. Tenayan Raya, Kota Pekanbaru, Riau 28281",
+  "tipe": 36,
+  "luas_tanah": 108,
+  "harga": 150500000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "628117590500"
+  },
+  "y": 101.518746,
+  "x": 0.498283,
+  "kecamatan": "Tenayan Raya",
+  "imgUrl": "/Tenayan Raya/Perumahan Graha Timur Raya.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860639"
+  },
+  "nama_perumahan": "Perumahan Duta Harapan Permai",
+  "alamat": "Jl. Indra Puri, Bencah Lesung, Kec. Tenayan Raya, Kota Pekanbaru, Riau 28131",
+  "tipe": 45,
+  "luas_tanah": 90,
+  "harga": 460000000,
+  "isAvailable": "Available",
+  "nomor_hp": 0,
+  "y": 101.493809,
+  "x": 0.5169023,
+  "kecamatan": "Tenayan Raya",
+  "imgUrl": "/Tenayan Raya/Perumahan Duta Harapan Permai.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686063a"
+  },
+  "nama_perumahan": "Perumahan Hangtuah Home",
+  "alamat": "Jl. Sialang Bungkuk No.9, Bencah Lesung, Kec. Tenayan Raya, Kota Pekanbaru, Riau 28131",
+  "tipe": 48,
+  "luas_tanah": 110,
+  "harga": 480000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282388783311"
+  },
+  "y": 101.49604,
+  "x": 0.50563,
+  "kecamatan": "Tenayan Raya",
+  "imgUrl": "/Tenayan Raya/Perumahan Hangtuah Home.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686063b"
+  },
+  "nama_perumahan": "Cluster Paradise Town House",
+  "alamat": "Jl. Sialang Bungkuk, Bencah Lesung, Kec. Tenayan Raya, Kota Pekanbaru, Riau 28285",
+  "tipe": 48,
+  "luas_tanah": 120,
+  "harga": 0,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281371211127"
+  },
+  "y": 101.4955,
+  "x": 0.502991,
+  "kecamatan": "Tenayan Raya",
+  "imgUrl": "/Tenayan Raya/Cluster Paradise Town House.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686063c"
+  },
+  "nama_perumahan": "Villa Paradise Town House",
+  "alamat": "Jl. Sialang Bungkuk, Bencah Lesung, Kec. Tenayan Raya, Kota Pekanbaru, Riau 28285",
+  "tipe": 55,
+  "luas_tanah": 140,
+  "harga": 0,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281371211127"
+  },
+  "y": 101.4955,
+  "x": 0.502991,
+  "kecamatan": "Tenayan Raya",
+  "imgUrl": "/Tenayan Raya/Villa Paradise Town House.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686063d"
+  },
+  "nama_perumahan": "Perumahan The Sentosa Gobah",
+  "alamat": "Jl. Dwikora No.21, RT.03, Suka Maju, Kec. Sail, Kota Pekanbaru, Riau 28131",
+  "tipe": 60,
+  "luas_tanah": 120,
+  "harga": 890000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6276122982"
+  },
+  "y": 101.465,
+  "x": 0.517357,
+  "kecamatan": "Sail",
+  "imgUrl": "/Sail/Perumahan The Sentosa Gobah.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686063e"
+  },
+  "nama_perumahan": "Perumahan Abdul Muis Residence",
+  "alamat": "Jl. Abdul Muis No.30, Cinta Raja, Kec. Sail, Kota Pekanbaru, Riau 28127",
+  "tipe": 60,
+  "luas_tanah": 90,
+  "harga": 820000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282174620008"
+  },
+  "y": 101.459852,
+  "x": 0.50923543,
+  "kecamatan": "Sail",
+  "imgUrl": "/Sail/Perumahan Abdul Muis Residence.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686063f"
+  },
+  "nama_perumahan": "Perumahan Bukit Melati",
+  "alamat": "Jl. Flamboyan 4, Simpang Baru, Tampan, Pekanbaru",
+  "tipe": 36,
+  "luas_tanah": 134,
+  "harga": 520000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281317692011"
+  },
+  "y": 101.3998402,
+  "x": 0.487565592,
+  "kecamatan": "Tampan",
+  "imgUrl": "/Tampan/Perumahan Bukit Melati.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860640"
+  },
+  "nama_perumahan": "Perumahan Tampan Permai",
+  "alamat": "Jl. Suka Karya, Tuah Karya, Kec. Tampan, Kota Pekanbaru, Riau 28293",
+  "tipe": 180,
+  "luas_tanah": 290,
+  "harga": 1600000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6289756867507"
+  },
+  "y": 101.3773806,
+  "x": 0.458888288,
+  "kecamatan": "Tampan",
+  "imgUrl": "/Tampan/Perumahan Tampan Permai.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860641"
+  },
+  "nama_perumahan": "Perumahan Garuda Cluster",
+  "alamat": "Jl. Garuda No.10, Delima, Kec. Tampan, Kota Pekanbaru, Riau 28292",
+  "tipe": 36,
+  "luas_tanah": 163,
+  "harga": 162000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282169066946"
+  },
+  "y": 101.4055626,
+  "x": 0.466931522,
+  "kecamatan": "Tampan",
+  "imgUrl": "/Tampan/Perumahan Garuda Cluster.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860642"
+  },
+  "nama_perumahan": "Perumahan OPV",
+  "alamat": "Jl. Sekuntum Raya No.2, Delima, Tampan, Pekanbaru City, Riau 28292",
+  "tipe": 36,
+  "luas_tanah": 120,
+  "harga": 240000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6282285519995"
+  },
+  "y": 101.4052822,
+  "x": 0.489130401,
+  "kecamatan": "Tampan",
+  "imgUrl": "/Tampan/Perumahan OPV.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860643"
+  },
+  "nama_perumahan": "Perumahan Muthmainnah",
+  "alamat": "Jl. Delima, Tampan, Pekanbaru City, Riau 28294",
+  "tipe": 70,
+  "luas_tanah": 155,
+  "harga": 360000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6281278013811"
+  },
+  "y": 101.4131107,
+  "x": 0.46724339,
+  "kecamatan": "Tampan",
+  "imgUrl": "/Tampan/Perumahan Muthmainnah.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860644"
+  },
+  "nama_perumahan": "Perumahan Villa Pesona Panam & Trilogi II",
+  "alamat": "Jl. Raya Bangkinang-Pekanbaru, Simpang Baru, Tampan, Pekanbaru City, Riau 28293",
+  "tipe": 24,
+  "luas_tanah": 136,
+  "harga": 114000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6285271555432"
+  },
+  "y": 101.3616186,
+  "x": 0.462274589,
+  "kecamatan": "Tampan",
+  "imgUrl": "/Tampan/Perumahan Villa Pesona Panam & Trilogi II.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860645"
+  },
+  "nama_perumahan": "Perumahan Vaishatama Blok E07",
+  "alamat": "Jl. Perum Vaishatama No.E 07, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 28293",
+  "tipe": 70,
+  "luas_tanah": 210,
+  "harga": 238000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6281268438430"
+  },
+  "y": 101.4103652,
+  "x": 0.45866318,
+  "kecamatan": "Tampan",
+  "imgUrl": "/Tampan/Perumahan Vaishatama Blok E07.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860646"
+  },
+  "nama_perumahan": "Perumahan Griya Sidomulyo",
+  "alamat": "Jl. Merak II, Perhentian Marpoyan, Kec. Marpoyan Damai, Kota Pekanbaru, Riau 28283",
+  "tipe": 24,
+  "luas_tanah": 225,
+  "harga": 270530000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6288576543456"
+  },
+  "y": 101.4314247,
+  "x": 0.436983442,
+  "kecamatan": "Marpoyan Damai",
+  "imgUrl": "/Marpoyan Damai/Perumahan Griya Sidomulyo.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860647"
+  },
+  "nama_perumahan": "Perumahan Cleopatra Residence 2",
+  "alamat": "Jl. Bakti IV, Tengkerang Barat, Marpoyan Damai, Pekanbaru City, Riau 28125",
+  "tipe": 140,
+  "luas_tanah": 260,
+  "harga": 1000000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6281999668000"
+  },
+  "y": 101.4274263,
+  "x": 0.484783129,
+  "kecamatan": "Marpoyan Damai",
+  "imgUrl": "/Marpoyan Damai/Perumahan Cleopatra Residence 2.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860648"
+  },
+  "nama_perumahan": "Perumahan Griya Mutiara Asri",
+  "alamat": "Jl. Arifin Ahmad No.18, RT.1/RW.15, Sidomulyo Tim., Kec. Marpoyan Damai, Kota Pekanbaru, Riau 28289",
+  "tipe": 54,
+  "luas_tanah": 220,
+  "harga": 225000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6285271368917"
+  },
+  "y": 101.4210866,
+  "x": 0.474703747,
+  "kecamatan": "Marpoyan Damai",
+  "imgUrl": "/Marpoyan Damai/Perumahan Griya Mutiara Asri.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860649"
+  },
+  "nama_perumahan": "Perumahan Sakinah",
+  "alamat": "Jl. Gelatik, Tengkerang Tengah, Kec. Marpoyan Damai, Kota Pekanbaru, Riau 28128",
+  "tipe": 45,
+  "luas_tanah": 110,
+  "harga": 140000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281365600921"
+  },
+  "y": 101.4532946,
+  "x": 0.496771448,
+  "kecamatan": "Marpoyan Damai",
+  "imgUrl": "/Marpoyan Damai/Perumahan Sakinah.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686064a"
+  },
+  "nama_perumahan": "Perumahan Katio Residence",
+  "alamat": "Jl. Katio No.60, Tengkerang Tengah, Kec. Marpoyan Damai, Kota Pekanbaru, Riau 28125",
+  "tipe": 60,
+  "luas_tanah": 112,
+  "harga": 435000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281211907458"
+  },
+  "y": 101.4435619,
+  "x": 0.493795361,
+  "kecamatan": "Marpoyan Damai",
+  "imgUrl": "/Marpoyan Damai/Perumahan Katio Residence.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686064b"
+  },
+  "nama_perumahan": "Perumahan Sidomulyo",
+  "alamat": "Jl. Garuda IV No.27, Perhentian Marpoyan, Kec. Marpoyan Damai, Kota Pekanbaru, Riau 28283",
+  "tipe": 36,
+  "luas_tanah": 108,
+  "harga": 485000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281177192715"
+  },
+  "y": 101.4284555,
+  "x": 0.433690689,
+  "kecamatan": "Marpoyan Damai",
+  "imgUrl": "/Marpoyan Damai/Perumahan Sidomulyo.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686064c"
+  },
+  "nama_perumahan": "Perumahan Cluster Villa 9",
+  "alamat": "Jl. Sidodadi, Perhentian Marpoyan, Kec. Marpoyan Damai, Kota Pekanbaru, Riau 28283",
+  "tipe": 94,
+  "luas_tanah": 139,
+  "harga": 690000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6281378266299"
+  },
+  "y": 101.4276143,
+  "x": 0.437029061,
+  "kecamatan": "Marpoyan Damai",
+  "imgUrl": "/Marpoyan Damai/Perumahan Cluster Villa 9.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686064d"
+  },
+  "nama_perumahan": "Perumahan Savana Cluster",
+  "alamat": "Jl. Karya Bakti, Tengkerang Bar., Kec. Marpoyan Damai, Kota Pekanbaru, Riau 28282",
+  "tipe": 45,
+  "luas_tanah": 100,
+  "harga": 227000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282285254659"
+  },
+  "y": 101.4317828,
+  "x": 0.481432911,
+  "kecamatan": "Marpoyan Damai",
+  "imgUrl": "/Marpoyan Damai/Perumahan Savana Cluster.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686064e"
+  },
+  "nama_perumahan": "Perumahan Arifin Luxus Residences",
+  "alamat": "Jl. Dwi Tunggal, Tengkerang Barat, Marpoyan Damai, Pekanbaru City, Riau 28125",
+  "tipe": 45,
+  "luas_tanah": 125,
+  "harga": 210000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281384937493"
+  },
+  "y": 101.431165,
+  "x": 0.483108109,
+  "kecamatan": "Marpoyan Damai",
+  "imgUrl": "/Marpoyan Damai/Perumahan Arifin Luxus Residences.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c686064f"
+  },
+  "nama_perumahan": "Perumahan Kartama Bumi Indah",
+  "alamat": "Jl. Kost Kentoeng, Perhentian Marpoyan, Kec. Marpoyan Damai, Kota Pekanbaru, Riau 28284",
+  "tipe": 45,
+  "luas_tanah": 150,
+  "harga": 156000000,
+  "isAvailable": "Sold",
+  "nomor_hp": {
+    "$numberLong": "6282391189243"
+  },
+  "y": 101.4395487,
+  "x": 0.441023047,
+  "kecamatan": "Marpoyan Damai",
+  "imgUrl": "/Marpoyan Damai/Perumahan Kartama Bumi Indah.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860650"
+  },
+  "nama_perumahan": "D' Royal Sukajadi",
+  "alamat": "Jl. SUKAJADI TARAI BANGUN",
+  "tipe": 36,
+  "luas_tanah": 108,
+  "harga": 166000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281334883430"
+  },
+  "y": 101.4483,
+  "x": 0.5165,
+  "kecamatan": "Sukajadi",
+  "imgUrl": "/Sukajadi/D' Royal Sukajadi.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860651"
+  },
+  "nama_perumahan": "Perumahan Griya Setya Nusa 3",
+  "alamat": "Jl. Sukajadi -Kubang Raya",
+  "tipe": 36,
+  "luas_tanah": 108,
+  "harga": 150000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281365339000"
+  },
+  "y": 101.4178,
+  "x": 0.4645,
+  "kecamatan": "Sukajadi",
+  "imgUrl": "/Sukajadi/Perumahan Griya Setya Nusa 3.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860652"
+  },
+  "nama_perumahan": "Perumahan Tanjung Griya Permai",
+  "alamat": "Jl. Jasa/ Sukajadi - Nangka Kota Pekanbaru",
+  "tipe": 36,
+  "luas_tanah": 108,
+  "harga": 147000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281371741235"
+  },
+  "y": 101.446,
+  "x": 0.515,
+  "kecamatan": "Sukajadi",
+  "imgUrl": "/Sukajadi/Perumahan Tanjung Griya Permai.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860653"
+  },
+  "nama_perumahan": "New Royal Afista Sukajadi",
+  "alamat": "Jl. Tiung II Kecamatan Sukajadi Kota Pekanbaru",
+  "tipe": 85,
+  "luas_tanah": 115,
+  "harga": 1400000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "628127521861"
+  },
+  "y": 101.452,
+  "x": 0.518,
+  "kecamatan": "Sukajadi",
+  "imgUrl": "/Sukajadi/New Royal Afista Sukajadi.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860654"
+  },
+  "nama_perumahan": "Perumahan Tanah Hitam",
+  "alamat": "Jl. Pepaya No.II, tanah hitam, Kec. Sukajadi, Kota Pekanbaru, Riau",
+  "tipe": 45,
+  "luas_tanah": 108,
+  "harga": 275000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281275278090"
+  },
+  "y": 101.4178,
+  "x": 0.4645,
+  "kecamatan": "Sukajadi",
+  "imgUrl": "/Sukajadi/Perumahan Tanah Hitam.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860655"
+  },
+  "nama_perumahan": "Merak Townhouse",
+  "alamat": "jl. Kereta Api Ujung - Jl. Merak, samping SD IT Al-Fikri",
+  "tipe": 56,
+  "luas_tanah": 115,
+  "harga": 350000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282110784938"
+  },
+  "y": 101.448,
+  "x": 0.493,
+  "kecamatan": "Pekanbaru Kota",
+  "imgUrl": "/Pekanbaru Kota/Merak Townhouse.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860656"
+  },
+  "nama_perumahan": "Bakti Citra Residence",
+  "alamat": "jalan Kadiran, Pesantren, Parit Indah Ujung",
+  "tipe": 36,
+  "luas_tanah": 101,
+  "harga": 153000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282385939944"
+  },
+  "y": 101.43,
+  "x": 0.5075,
+  "kecamatan": "Pekanbaru Kota",
+  "imgUrl": "/Pekanbaru Kota/Bakti Citra Residence.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860657"
+  },
+  "nama_perumahan": "Perumahan Green Eka Tunggal Land",
+  "alamat": "jalan Eka Tunggal,Purwodadi, Pekanbaru",
+  "tipe": 80,
+  "luas_tanah": 112,
+  "harga": 450000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6285278131808"
+  },
+  "y": 101.4776,
+  "x": 0.4878,
+  "kecamatan": "Pekanbaru Kota",
+  "imgUrl": "/Pekanbaru Kota/Perumahan Green Eka Tunggal Land.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860658"
+  },
+  "nama_perumahan": "Perum Intan Village",
+  "alamat": "Jl. Datuk wan abdulrahman 3",
+  "tipe": 70,
+  "luas_tanah": 129,
+  "harga": 400000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6282386502020"
+  },
+  "y": 101.455,
+  "x": 0.5111,
+  "kecamatan": "Pekanbaru Kota",
+  "imgUrl": "/Pekanbaru Kota/Perum Intan Village.jpg"
+},
+{
+  "_id": {
+    "$oid": "6766db5f25ffb815c6860659"
+  },
+  "nama_perumahan": "Perumahan Royal Astonia",
+  "alamat": "Jl. Fajar Ujung, Pekanbaru",
+  "tipe": 65,
+  "luas_tanah": 145,
+  "harga": 650000000,
+  "isAvailable": "Available",
+  "nomor_hp": {
+    "$numberLong": "6281381751967"
+  },
+  "y": 101.4458,
+  "x": 0.5244,
+  "kecamatan": "Pekanbaru Kota",
+  "imgUrl": "/Pekanbaru Kota/Perumahan Royal Astonia.jpg"
+}]
