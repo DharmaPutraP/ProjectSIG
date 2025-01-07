@@ -20,6 +20,11 @@ export const TIPE_RUMAH = [36, 45, 54, 60];
 export const columnsTabel = (role, handleDelete) => {
   const columns = [
     {
+      name: "No",
+      selector: (row, index) => index + 1,
+      grow: 0,
+    },
+    {
       name: "Nama Perumahan",
       selector: (row) => row.nama_perumahan,
       sortable: true,
