@@ -44,7 +44,7 @@ const Map = ({ locations, style = "h-screen", mapCenter }) => {
               <b>{location.name}</b>
               <p>{location.address}</p>
               <img
-                src={`${process.env.REACT_APP_MARKERICON_URI}/${location.kecamatan}/${location.name}.jpg`}
+                src={`${process.env.REACT_APP_IMAGE_URL}/${location.kecamatan}/${location.name}.jpg`}
                 alt="Gambar"
                 width={100}
               />
