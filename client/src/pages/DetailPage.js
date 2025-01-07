@@ -102,8 +102,9 @@ const DetailPage = () => {
                 <td>:</td>
                 <td className="ps-5">
                   <a
-                    href={`https://api.whatsapp.com/send/?phone=${perumahan.nomor_hp}`}
+                    href={`https://wa.me/${perumahan.nomor_hp}?text=Hai saya ingin menanyai detail mengenai ${perumahan.nama_perumahan}`}
                     className="text-green-500 flex"
+                    target="_blank"
                   >
                     <img
                       src={`${process.env.REACT_APP_MARKERICON_URI}/whatsappIcon.png`}
